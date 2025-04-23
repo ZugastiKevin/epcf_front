@@ -1,19 +1,61 @@
 @font-face {
-  font-family: "Regular";
-  src: url();
+  font-family: "Special Gothic Regular";
+  src: url(../fonts/Special_Gothic/SpecialGothic-Regular.ttf);
   font-weight: 400;
 }
+.cta-light {
+  background-color: #012622;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  transition: all 0.2s ease-in-out;
+}
+.cta-light span {
+  color: #ECE5F0;
+}
+
+.cta-light:hover {
+  background-color: #003B36;
+  border: 1px solid #012622;
+}
+
+.cta-dark {
+  background-color: #F7F7F8;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  transition: all 0.2s ease-in-out;
+}
+.cta-dark span {
+  color: #003B36;
+}
+
+.cta-dark:hover {
+  background-color: #ECE5F0;
+}
+
+.link {
+  color: #E98A15;
+}
+
+.link:hover {
+  border-bottom: 3px solid #E98A15;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "";
+  font-family: "Special Gothic Regular";
+  font-size: 1rem;
   margin: 0;
 }
 
 section {
   margin-bottom: 3rem;
+}
+
+h1, h2 {
+  font-size: 1.5rem;
 }
 
 ul {

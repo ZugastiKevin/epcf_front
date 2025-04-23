@@ -1,1 +1,38 @@
 @use "../abstracts/variables" as variable;
+
+.cta-light {
+    background-color: variable.$bg-primary-dark;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    span {
+        color: variable.$secondary-dark;
+    };
+    transition: all 0.2s ease-in-out;
+};
+
+.cta-light:hover {
+    background-color: variable.$bg-secondary-light;
+    border: 1px solid variable.$bg-primary-dark;
+};
+
+.cta-dark {
+    background-color: variable.$bg-primary-light;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    span {
+        color: variable.$secondary-light;
+    };
+    transition: all 0.2s ease-in-out;
+};
+
+.cta-dark:hover {
+    background-color: variable.$bg-secondary-dark;
+};
+
+.link {
+    color: variable.$color-accent;
+};
+
+.link:hover {
+    border-bottom: 3px solid variable.$color-accent; 
+};

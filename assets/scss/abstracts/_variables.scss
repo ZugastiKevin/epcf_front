@@ -1,10 +1,17 @@
 @use "../base/typographys";
 
-$font-primary: "Regular";
+$font-primary: "Special Gothic Regular";
 
-$color-primary: #700C0C;
-$color-secondary: #5A0303;
-$color-thirdary: #727070;
-$color-accent: #615F5F;
-$color-black: #1C1515;
-$color-white: #ffffff;
+$bg-primary-light: #F7F7F8;
+$bg-primary-dark: #012622;
+
+$primary-light: #F7F7F8;
+$primary-dark: #012622;
+
+$bg-secondary-light: #003B36;
+$bg-secondary-dark: #ECE5F0;
+
+$secondary-light: #003B36;
+$secondary-dark: #ECE5F0;
+
+$color-accent: #E98A15;

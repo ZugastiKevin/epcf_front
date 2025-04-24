@@ -2,8 +2,8 @@
 
 .cta-light {
     background-color: variable.$bg-primary-dark;
-    border-radius: 1rem;
-    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    padding: 1rem 2.5rem;
     span {
         color: variable.$secondary-dark;
     };
@@ -17,8 +17,8 @@
 
 .cta-dark {
     background-color: variable.$bg-primary-light;
-    border-radius: 1rem;
-    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    padding: 1rem 2.5rem;
     span {
         color: variable.$secondary-light;
     };

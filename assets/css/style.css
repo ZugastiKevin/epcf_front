@@ -3,10 +3,211 @@
   src: url(../fonts/Special_Gothic/SpecialGothic-Regular.ttf);
   font-weight: 400;
 }
+main {
+  margin-top: 8rem;
+}
+main #banner .title h3:first-child {
+  text-transform: uppercase;
+}
+main #banner .container-elements-banner {
+  margin-top: 5rem;
+  position: relative;
+}
+main #banner .container-elements-banner i {
+  font-size: 3rem;
+}
+main #banner .container-elements-banner img {
+  border-top-left-radius: 15rem;
+  border-bottom-right-radius: 15rem;
+  box-shadow: -4px -4px 4px 0 #003B36, 4px 4px 4px 0 #003B36;
+}
+main #banner .container-elements-banner .linkedin {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main #banner .container-elements-banner .github {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+main #me .container-me {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  max-height: 35rem;
+}
+main #me .container-me .image-me {
+  width: 40%;
+}
+main #me .container-me .image-me img {
+  border-radius: 1.5rem 6rem 1.5rem 6rem;
+}
+main #me .container-me .content-me {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+main #me .container-me .content-me .content-trait {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+main #me .container-me .content-me .content-trait .trait {
+  width: 22%;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+main #me .container-me .content-me .content-trait .trait p {
+  margin-bottom: 0;
+}
+main #me .container-me .content-me .content-trait .trait i {
+  color: #ECE5F0;
+}
+main #works .works .works-selector {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+main #works .works .works-selector span {
+  cursor: pointer;
+  display: block;
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+main #works .works .works-selector .work {
+  width: 15%;
+}
+main #works .works .works-selector .work span {
+  color: #ECE5F0;
+}
+main #works .works .works-selector .selected {
+  width: 15%;
+  background-color: #ECE5F0;
+  border: 1px solid #003B36;
+  border-radius: 1.5rem;
+  box-shadow: inset 0 4px 4px 0 #003B36, 0 4px 4px 2px #003B36;
+  color: #ECE5F0;
+}
+main #works .works .works-selector .selected span {
+  color: #003B36;
+}
+
+@media screen and (max-width: 900px) {
+  main #me .container-me .content-me .content-trait .trait {
+    font-size: 0.8rem;
+  }
+  main #me .container-me .content-me .content-trait .trait i {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  main #banner .container-elements-banner i {
+    font-size: 2.15rem;
+  }
+  main #banner .container-elements-banner img {
+    border-top-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+  }
+  main #me .container-me .content-me .content-trait .trait {
+    font-size: 0.6rem;
+  }
+  main #me .container-me .content-me .content-trait .trait i {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  main {
+    margin-top: 12rem;
+  }
+  main #banner .container {
+    width: 100%;
+  }
+  main #banner .container-elements-banner img {
+    border-radius: inherit;
+    box-shadow: inherit;
+  }
+  main #banner .container-elements-banner .linkedin {
+    top: -4rem;
+    left: 7.7rem;
+  }
+  main #banner .container-elements-banner .github {
+    top: -4rem;
+    right: 7.7rem;
+  }
+  main #me .container {
+    width: 100%;
+  }
+  main #me .container-me {
+    flex-direction: column;
+    align-items: center;
+  }
+  main #me .container-me .image-me {
+    width: 100%;
+    max-height: 20rem;
+  }
+  main #me .container-me .image-me img {
+    border-radius: inherit;
+  }
+  main #me .container-me .content-me .content-trait .trait {
+    font-size: 0.8rem;
+  }
+  main #me .container-me .content-me .content-trait .trait i {
+    font-size: 0.8rem;
+  }
+}
+header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #F7F7F8;
+  box-shadow: 0 4px 4px 0 #ECE5F0;
+}
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav .list-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+header .nav .list-navigation .link {
+  font-size: 1.5rem;
+}
+header .nav .list-navigation .icon-nav-theme-mobile {
+  display: none;
+}
+header .nav .list-navigation i {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 520px) {
+  header .nav {
+    flex-direction: column;
+  }
+  header .nav .list-navigation {
+    gap: 1rem;
+  }
+  header .nav .list-navigation .icon-nav-theme-mobile {
+    display: inherit;
+  }
+  header .nav .list-navigation .icon-nav-theme-desktop {
+    display: none;
+  }
+}
 .cta-light {
   background-color: #012622;
-  border-radius: 1rem;
-  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  padding: 1rem 2.5rem;
   transition: all 0.2s ease-in-out;
 }
 .cta-light span {
@@ -20,8 +221,8 @@
 
 .cta-dark {
   background-color: #F7F7F8;
-  border-radius: 1rem;
-  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  padding: 1rem 2.5rem;
   transition: all 0.2s ease-in-out;
 }
 .cta-dark span {
@@ -45,17 +246,38 @@
 }
 
 body {
+  position: relative;
   font-family: "Special Gothic Regular";
   font-size: 1rem;
   margin: 0;
+  background-color: #F7F7F8;
 }
 
 section {
-  margin-bottom: 3rem;
+  margin-bottom: 10rem;
 }
 
 h1, h2 {
   font-size: 1.5rem;
+  color: #012622;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+  color: #003B36;
+}
+
+i {
+  font-size: 1.3rem;
+  color: #003B36;
 }
 
 ul {
@@ -71,6 +293,23 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title h3:first-of-type {
+  border-bottom: 3px solid #E98A15;
+}
+
+.box {
+  background-color: #003B36;
+  border: 1px solid #F7F7F8;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 4px 2px #003B36;
+  color: #ECE5F0;
 }
 
 .container {

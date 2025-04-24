@@ -5,17 +5,38 @@
 };
 
 body {
+    position: relative;
     font-family: "Special Gothic Regular";
     font-size: 1rem;
     margin: 0;
+    background-color: variable.$bg-primary-light;
 };
 
 section {
-    margin-bottom: 3rem;
+    margin-bottom: 10rem;
 };
 
 h1, h2 {
     font-size: 1.5rem;
+    color: variable.$primary-dark;
+};
+
+h1 {
+    margin-bottom: 0;
+};
+
+h2 {
+    margin: 0;
+};
+
+h3 {
+    margin: 0;
+    color: variable.$secondary-light;
+};
+
+i {
+    font-size: 1.3rem;
+    color: variable.$secondary-light;
 };
 
 ul {
@@ -31,4 +52,21 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+};
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3:first-of-type {
+        border-bottom: 3px solid variable.$color-accent;
+    };
+};
+
+.box {
+    background-color: variable.$bg-secondary-light;
+    border: 1px solid variable.$bg-primary-light;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 4px 2px variable.$bg-secondary-light;
+    color: variable.$secondary-dark;
 };

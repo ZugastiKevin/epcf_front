@@ -1,14 +1,51 @@
 @use "../abstracts/variables" as variable;
 
 header {
-  nav {
-
-  };
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: variable.$bg-primary-light;
+    box-shadow: 0 4px 4px 0 variable.$bg-secondary-dark;
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .list-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+            .link {
+                font-size: 1.5rem;
+            };
+            .icon-nav-theme-mobile {
+                display: none;
+            };
+            i {
+                cursor: pointer;
+            };
+        };
+    };
 };
 
 // Responsive:
-@media screen and (max-width: 768px) {
-  
+@media screen and (max-width: 520px) {
+    header {
+        .nav {
+            flex-direction: column;
+            .list-navigation {
+                gap: 1rem;
+                .icon-nav-theme-mobile {
+                  display: inherit;
+                };
+                .icon-nav-theme-desktop {
+                    display: none;
+                };
+            };
+        };
+    };
 };
 
 @media screen and (max-width: 360px) {

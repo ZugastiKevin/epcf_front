@@ -53,20 +53,3 @@ img {
     height: 100%;
     object-fit: cover;
 };
-
-.title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    h3:first-of-type {
-        border-bottom: 3px solid variable.$color-accent;
-    };
-};
-
-.box {
-    background-color: variable.$bg-secondary-light;
-    border: 1px solid variable.$bg-primary-light;
-    border-radius: 1.5rem;
-    box-shadow: 0 4px 4px 2px variable.$bg-secondary-light;
-    color: variable.$secondary-dark;
-};

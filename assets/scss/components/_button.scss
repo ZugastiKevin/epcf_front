@@ -1,9 +1,16 @@
 @use "../abstracts/variables" as variable;
 
+@keyframes bounce {
+    0% {translate: 0;}
+    50% {translate: -8px;}
+    100% {translate: 0;}
+}
+
 .cta-light {
     background-color: variable.$bg-primary-dark;
     border-radius: 2rem;
     padding: 1rem 2.5rem;
+    border: 1px solid variable.$bg-primary-dark;
     span {
         color: variable.$secondary-dark;
     };
@@ -30,9 +37,36 @@
 };
 
 .link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 3px solid transparent;
     color: variable.$color-accent;
+    i {
+        font-size: 0.9rem;
+        color: variable.$color-accent;
+    };
+    transition: all 0.1s ease-out;
 };
 
 .link:hover {
-    border-bottom: 3px solid variable.$color-accent; 
+    padding-bottom: 0;
+    border-bottom: 3px solid variable.$color-accent;
+    cursor: pointer;
+    i {
+        animation: 0.8s linear infinite bounce;
+    };
+};
+
+.close-modal {
+    i {
+        font-size: 1.2rem;
+        color: variable.$color-accent;
+    };
+    transition: all 0.1s ease-out;
+};
+
+.close-modal:hover {
+    cursor: pointer;
+    text-shadow: 0 0 5px variable.$secondary-dark, 0 0 10px variable.$secondary-dark, 0 0 15px variable.$secondary-dark, 0 0 20px variable.$color-accent, 0 0 30px variable.$color-accent, 0 0 40px variable.$color-accent, 0 0 55px variable.$color-accent, 0 0 75px variable.$color-accent;
 };

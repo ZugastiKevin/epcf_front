@@ -1,0 +1,33 @@
+{
+    "all": [{
+            "id": "sev",
+            "title": "Agent de Securite",
+            "subTitle": "Securite et Vigilance",
+            "content": "Gestion des entrées du personnel et des visiteurs et entreprise annexe. Gestion des caméras de sécurité. Gestion de l'accueil des clients et contrôle des bagages. Délivrance des permis de travail et feu."
+        },{
+            "id": "s.p.p",
+            "title": "Agent de Securite",
+            "subTitle": "S.P.P",
+            "content": "Contrôle d'accès des personnes et des véhicules. Surveillance des systèmes de sécurité électroniques, tels que les caméras et les détecteurs de mouvement. Délivrance des permis de travail et feu. Gestion des situations d'urgence, y compris les incendies et les évacuations. Rédaction de rapports d'incidents. Patrouille des bâtiments et des zones sensibles."
+        },{
+            "id": "epseco",
+            "title": "Formation Agent de Securite",
+            "subTitle": "Epseco mix Bergerac",
+            "content": "Incendie: tous les systèmes incendie et évacuation. Sécurité: palpation de sécurité, rapports de ronde, alphabet phonétique, méthodologie de la sécurité."
+        },{
+            "id": "thp",
+            "title": "Formation Developpeur Web et Web Mobile",
+            "subTitle": "The Hacking Project",
+            "content": "Intégrateur Web: JavaScript, HTML, CSS, PostgreSQL. Développeur Full Stack: spécialisation React et Ruby on Rails."
+        },{
+            "id": "a.s.s",
+            "title": "Formation Agent de Securite",
+            "subTitle": "A.S.S Formations",
+            "content": "Incendie, Sécurité, SST, H0B0, BE Manœuvre."
+        },{
+            "id": "talis",
+            "title": "Formation Developpeur Web et Web Mobile",
+            "subTitle": "Talis Business School",
+            "content": "Front-end: HTML, CSS, Sass, Tailwind, Symfony. Développeur Full Stack: spécialisation PHP et JavaScript."
+        }]
+}

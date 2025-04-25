@@ -21,6 +21,13 @@
         </nav>
     </header>
     <main>
+        <div class="disguise"></div>
+        <div class="rendering-modal">
+            <a class="close-modal"><i class="fa-solid fa-rectangle-xmark"></i></a>
+            <h2 id="title"></h2>
+            <h3 id="subTitle"></h3>
+            <p id="content"></p>
+        </div>
         <section id="banner">
             <div class="container">
                 <div class="title">
@@ -79,21 +86,63 @@
                     <h2>Mon parcours</h2>
                 </div>
                 <div class="works-selector">
-                    <div class="box work">
+                    <div id="work" class="box work pro">
                         <span>Pro</span>
                     </div>
-                    <div class="selected">
+                    <div id="work" class="selected all">
                         <span>Tous</span>
                     </div>
-                    <div class="box work">
+                    <div id="work" class="box work learn">
                         <span>Formations</span>
+                    </div>
+                </div>
+                <div class="rendering-works">
+                    <div id="pro-card" class="work-card all">
+                        <h2>Agent de Securite</h2>
+                        <h3>Securite et Vigilance</h3>
+                        <p>Gestion des entrées du personnel et des visiteurs et entreprise annexe. Gestion des caméras de sécurité. Gestion de l'accueil des clients et contrôle des bagages. Délivrance des permis de travail et feu.</p>
+                        <a id="sev" class="link see-more">Voir plus <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div id="learn-card" class="work-card all">
+                        <h2>Formation Agent de Securite</h2>
+                        <h3>Epseco mix Bergerac</h3>
+                        <p>Incendie: tous les systèmes incendie et évacuation. Sécurité: palpation de sécurité, rapports de ronde, alphabet phonétique, méthodologie de la sécurité.</p>
+                        <a id="epseco" class="link see-more">Voir plus <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div id="learn-card" class="work-card all">
+                        <h2>Formation Developpeur Web et Web Mobile</h2>
+                        <h3>The Hacking Project</h3>
+                        <p>Intégrateur Web: JavaScript, HTML, CSS, PostgreSQL. Développeur Full Stack: spécialisation React et Ruby on Rails.</p>
+                        <a id="thp" class="link see-more">Voir plus <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div id="pro-card" class="work-card all">
+                        <h2>Agent de Securite</h2>
+                        <h3>S.P.P</h3>
+                        <p>Contrôle d'accès des personnes et des véhicules. Surveillance des systèmes de sécurité électroniques, tels que les caméras et les détecteurs de mouvement. Délivrance des permis de travail et feu. Gestion des situations d'urgence, y compris les incendies et les évacuations. Rédaction de rapports d'incidents. Patrouille des bâtiments et des zones sensibles.</p>
+                        <a id="s.p.p" class="link see-more">Voir plus <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div id="learn-card" class="work-card all">
+                        <h2>Formation Agent de Securite</h2>
+                        <h3>A.S.S Formations</h3>
+                        <p>Incendie, Sécurité, SST, H0B0, BE Manœuvre.</p>
+                        <a id="a.s.s" class="link see-more">Voir plus <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div id="learn-card" class="work-card all">
+                        <h2>Formation Developpeur Web et Web Mobile</h2>
+                        <h3>Talis Business School</h3>
+                        <p>Front-end: HTML, CSS, Sass, Tailwind, Symfony. Développeur Full Stack: spécialisation PHP et JavaScript.</p>
+                        <a id="talis" class="link see-more">Voir plus <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <section></section>
+        <section id="copyright">
+            <div class="container copyright">
+                <p>© Kevin Zugasti | Tous droits réservés</p>
+            </div>
+        </section>
     </footer>
     <script src="assets/scripts/header.js"></script>
     <script src="assets/scripts/homePage.js"></script>

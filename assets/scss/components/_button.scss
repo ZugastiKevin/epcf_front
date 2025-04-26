@@ -6,6 +6,18 @@
     100% {translate: 0;}
 }
 
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(360deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@keyframes rotate-left {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(-360deg);}
+    100% {transform: rotate(0deg);}
+}
+
 .cta-light {
     background-color: variable.$bg-primary-dark;
     border-radius: 2rem;
@@ -69,4 +81,157 @@
 .close-modal:hover {
     cursor: pointer;
     text-shadow: 0 0 5px variable.$secondary-dark, 0 0 10px variable.$secondary-dark, 0 0 15px variable.$secondary-dark, 0 0 20px variable.$color-accent, 0 0 30px variable.$color-accent, 0 0 40px variable.$color-accent, 0 0 55px variable.$color-accent, 0 0 75px variable.$color-accent;
+};
+
+.submit-btn {
+    margin: 1rem;
+    box-shadow: 
+        0px -4px 4px 2px variable.$primary-light,
+        0px 4px 4px 2px variable.$primary-light;
+    padding: 0.5rem;
+    width: 30vw;
+    background-color: variable.$bg-primary-light;
+    border: 1px solid variable.$secondary-light;
+    color: variable.$secondary-light;
+    border-radius: 0.5rem 0.5rem 1rem 1rem;
+    transition: all 0.3s ease-out;
+};
+
+.submit-btn:hover {
+    box-shadow: 
+        0px -4px 4px 2px variable.$color-accent,
+        0px 4px 4px 2px variable.$color-accent;
+};
+
+// Carousel
+#div-previous {
+    position: absolute;
+    z-index: 1;
+    left: 11%;
+    bottom: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #previous {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        i {
+            font-size: 3rem;
+            color: variable.$secondary-light;
+        };
+    };
+    #previous-inside {
+        margin: 0.8rem 0.74rem;
+        font-size: 1.5rem;
+        color: variable.$color-accent;
+    };
+};
+
+#div-previous:hover {
+    cursor: pointer;
+    #previous {
+        animation: 2s linear infinite rotate-left;
+    };
+    #previous-inside {
+        text-shadow: 0 0 5px variable.$primary-light, 0 0 10px variable.$primary-light, 0 0 15px variable.$primary-light, 0 0 20px variable.$color-accent, 0 0 30px variable.$color-accent, 0 0 40px variable.$color-accent, 0 0 55px variable.$color-accent, 0 0 75px variable.$color-accent;
+    };
+};
+
+#div-next {
+    position: absolute;
+    z-index: 1;
+    top: 11%;
+    right: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #next {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        i {
+            font-size: 3rem;
+            color: variable.$secondary-light;
+        };
+    };
+    #next-inside {
+        margin: 0.8rem 0.74rem;
+        font-size: 1.5rem;
+        color: variable.$color-accent;
+    };
+};
+
+#div-next:hover {
+    cursor: pointer;
+    #next {
+        animation: 2s linear infinite rotate;
+    };
+    #next-inside {
+        text-shadow: 0 0 5px variable.$primary-light, 0 0 10px variable.$primary-light, 0 0 15px variable.$primary-light, 0 0 20px variable.$color-accent, 0 0 30px variable.$color-accent, 0 0 40px variable.$color-accent, 0 0 55px variable.$color-accent, 0 0 75px variable.$color-accent;
+    };
+};
+// Carousel END
+
+// Responsive:
+@media screen and (min-width:1921px) {  
+    #div-previous {
+        left: 25%;
+        bottom: 12.5%;
+        #previous {
+            left: 0;
+            bottom: 0;
+        };
+    };
+    #div-next {
+        top: 12.5%;
+        right: 25%;
+        #next {
+            right: 0;
+            bottom: 0;
+        };
+    };
+    .submit-btn {
+        width: 20vw;
+    };
+};
+
+@media screen and (max-width:1250px) {  
+    #div-previous {
+        left: 12.5%;
+        bottom: 12.5%;
+    };
+    #div-next {
+        top: 12.5%;
+        right: 12.5%;
+    };
+};
+
+@media screen and (max-width:768px) {
+    #div-previous {
+        top: 3rem;
+        left: 7.7rem;
+        bottom: inherit;
+        #previous {
+            left: 0;
+            bottom: 0;
+        };
+    };
+    #div-next {
+        top: 3rem;
+        right: 7.7rem;
+        #next {
+            right: 0;
+            bottom: 0;
+        };
+    };
+    .submit-btn {
+        width: 35vw;
+    };
+};
+
+@media screen and (max-width:520px) {
+    .submit-btn {
+        width: 50vw;
+    };
 };

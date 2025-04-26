@@ -31,22 +31,22 @@
         <section id="banner">
             <div class="container">
                 <div class="title">
-                    <h3>hello, Je suis</h3>
-                    <h1>Kevin Zugasti</h1>
-                    <h3>Développeur Web et Web Mobile</h3>
+                    <h3>hello, je suis</h3>
+                    <h1>kevin zugasti</h1>
+                    <h3>développeur web et web mobile</h3>
                 </div>
                 <div class="container-elements-banner">
-                    <a href="" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/kevin-zugasti-760a9b203/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
                     <img src="assets/img/conference.png" alt="un homme qui donne une conference">
-                    <a href="" class="github"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://github.com/ZugastiKevin" target="_blank" class="github"><i class="fa-brands fa-square-github"></i></a>
                 </div>
             </div>
         </section>
         <section id="me">
             <div class="container me">
                 <div class="title">
-                    <h3>Présentation</h3>
-                    <h2>A propos de moi</h2>
+                    <h3>présentation</h3>
+                    <h2>a propos de moi</h2>
                 </div>
                 <div class="container-me">
                     <div class="image-me">
@@ -82,8 +82,8 @@
         <section id="works">
             <div class="container works">
                 <div class="title">
-                    <h3>Mon expérience</h3>
-                    <h2>Mon parcours</h2>
+                    <h3>mon expérience</h3>
+                    <h2>mon parcours</h2>
                 </div>
                 <div class="works-selector">
                     <div id="work" class="box work pro">
@@ -136,6 +136,66 @@
                 </div>
             </div>
         </section>
+        <section id="portfolio">
+            <div class="portfolio">
+                <div class="title">
+                    <h3>mon projets</h3>
+                    <h2>mon portfolio</h2>
+                </div>
+                <div class="carousel">
+                    <div id="div-previous">
+                        <a id="previous"><i class="fa-solid fa-expand"></i></a>
+                        <i id="previous-inside" class="fa-regular fa-square-caret-left"></i>
+                    </div>
+                    <ul class="gallery">
+                        <li><img src="assets/img/tvirus.png" alt="site t-virus evenementiel"></li>
+                        <li><img src="assets/img/tvirus.png" alt="site t-virus evenementiel"></li>
+                        <li><img src="assets/img/tvirus.png" alt="site t-virus evenementiel"></li>
+                        <li><img src="assets/img/tvirus.png" alt="site t-virus evenementiel"></li>
+                        <li><img src="assets/img/tvirus.png" alt="site t-virus evenementiel"></li>
+                        <li><img src="assets/img/tvirus.png" alt="site t-virus evenementiel"></li>
+                        <li><img src="assets/img/tvirus.png" alt="site t-virus evenementiel"></li>
+                        <li><img src="assets/img/tvirus.png" alt="site t-virus evenementiel"></li>
+                        <li><img src="assets/img/tvirus.png" alt="site t-virus evenementiel"></li>
+                        <li><img src="assets/img/tvirus.png" alt="site t-virus evenementiel"></li>
+                        <li><img src="assets/img/tvirus.png" alt="site t-virus evenementiel"></li>
+                        <li><img src="assets/img/tvirus.png" alt="site t-virus evenementiel"></li>
+                    </ul>
+                    <div class="dots"></div>
+                    <div id="div-next">
+                        <a id="next"><i class="fa-solid fa-expand"></i></a>
+                        <i id="next-inside" class="fa-regular fa-square-caret-right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contact">
+                <div class="title">
+                    <h3>get in touch</h3>
+                    <h2>contactez moi</h2>
+                </div>
+                <form id="contact-form">
+                    <div class="form group-f-l">
+                        <input class="contact-input firstname" type="text" name="firstname" placeholder="Prenom *" required>
+                        <input class="contact-input lastname" type="text" name="lastname" placeholder="Nom *" required>
+                    </div>
+                    <div class="form">
+                        <input class="contact-input email" type="email" name="email" placeholder="Email *" required>
+                    </div>
+                    <div class="form">
+                        <input class="contact-input object-form" type="text" name="object" placeholder="Sujet *" required>
+                    </div>
+                    <div class="form">
+                        <textarea class="contact-input content-form" name="content" placeholder="Message *" required></textarea>
+                    </div>
+                    <div class="form-submit">
+                        <button class="submit-btn" type="submit">Envoyer</button>
+                    </div>
+                    <p id="answer">Merci pour le message :)</p>
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
         <section id="copyright">
@@ -145,7 +205,9 @@
         </section>
     </footer>
     <script src="assets/scripts/header.js"></script>
-    <script src="assets/scripts/homePage.js"></script>
+    <script src="assets/scripts/works.js"></script>
+    <script src="assets/scripts/carousel.js"></script>
+    <script src="assets/scripts/contact.js"></script>
     <script src="assets/scripts/footer.js"></script>
 </body>
 </html>

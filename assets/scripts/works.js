@@ -14,7 +14,7 @@ function watcher() {
     const closeModal = document.querySelector(".close-modal");
 
     window.addEventListener("resize", function () {
-        if (window.innerWidth <= 520) {
+        if (window.innerWidth <= 768) {
             renderingModal.style.display = "none";
             flouted.style.display = "none";
             window.removeEventListener("click", outsideClick);

@@ -29,6 +29,19 @@
     box-shadow: 0 4px 4px 2px variable.$color-accent;
 };
 
+.dark-theme {
+    .box {
+        background-color: variable.$bg-secondary-dark;
+        border: 1px solid variable.$bg-primary-dark;
+        box-shadow: 0 4px 4px 2px variable.$bg-secondary-dark;
+        color: variable.$secondary-light;
+    };
+    .box:hover {
+        text-shadow: 0 0 5px variable.$secondary-light, 0 0 10px variable.$secondary-light, 0 0 15px variable.$secondary-light, 0 0 20px variable.$color-accent, 0 0 30px variable.$color-accent, 0 0 40px variable.$color-accent, 0 0 55px variable.$color-accent, 0 0 75px variable.$color-accent;
+        box-shadow: 0 4px 4px 2px variable.$color-accent;
+    };
+};
+
 // Responsive:
 @media screen and (min-width:1921px) {  
     .container {

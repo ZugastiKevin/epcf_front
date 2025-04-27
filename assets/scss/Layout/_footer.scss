@@ -9,3 +9,13 @@ footer {
         };
     };
 };
+
+.dark-theme {
+    footer {
+        #copyright {
+            .copyright {
+                color: variable.$secondary-dark;
+            };
+        };
+    };
+};

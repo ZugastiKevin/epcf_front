@@ -18,34 +18,19 @@
     100% {transform: rotate(0deg);}
 }
 
-.cta-light {
+.cta {
     background-color: variable.$bg-primary-dark;
     border-radius: 2rem;
     padding: 1rem 2.5rem;
-    border: 1px solid variable.$bg-primary-dark;
+    border: 3px solid variable.$bg-primary-dark;
     span {
         color: variable.$secondary-dark;
     };
     transition: all 0.2s ease-in-out;
 };
-
-.cta-light:hover {
+.cta:hover {
     background-color: variable.$bg-secondary-light;
-    border: 1px solid variable.$bg-primary-dark;
-};
-
-.cta-dark {
-    background-color: variable.$bg-primary-light;
-    border-radius: 2rem;
-    padding: 1rem 2.5rem;
-    span {
-        color: variable.$secondary-light;
-    };
-    transition: all 0.2s ease-in-out;
-};
-
-.cta-dark:hover {
-    background-color: variable.$bg-secondary-dark;
+    border: 3px solid variable.$color-accent;
 };
 
 .link {
@@ -60,11 +45,9 @@
     };
     transition: all 0.1s ease-out;
 };
-
 .link:hover {
     padding-bottom: 0;
     border-bottom: 3px solid variable.$color-accent;
-    cursor: pointer;
     i {
         animation: 0.8s linear infinite bounce;
     };
@@ -77,26 +60,23 @@
     };
     transition: all 0.1s ease-out;
 };
-
 .close-modal:hover {
     cursor: pointer;
     text-shadow: 0 0 5px variable.$secondary-dark, 0 0 10px variable.$secondary-dark, 0 0 15px variable.$secondary-dark, 0 0 20px variable.$color-accent, 0 0 30px variable.$color-accent, 0 0 40px variable.$color-accent, 0 0 55px variable.$color-accent, 0 0 75px variable.$color-accent;
 };
 
 .submit-btn {
-    margin: 1rem;
     box-shadow: 
         0px -4px 4px 2px variable.$primary-light,
         0px 4px 4px 2px variable.$primary-light;
     padding: 0.5rem;
-    width: 30vw;
+    width: 100%;
     background-color: variable.$bg-primary-light;
     border: 1px solid variable.$secondary-light;
     color: variable.$secondary-light;
     border-radius: 0.5rem 0.5rem 1rem 1rem;
     transition: all 0.3s ease-out;
 };
-
 .submit-btn:hover {
     box-shadow: 
         0px -4px 4px 2px variable.$color-accent,
@@ -127,7 +107,6 @@
         color: variable.$color-accent;
     };
 };
-
 #div-previous:hover {
     cursor: pointer;
     #previous {
@@ -161,7 +140,6 @@
         color: variable.$color-accent;
     };
 };
-
 #div-next:hover {
     cursor: pointer;
     #next {
@@ -172,6 +150,61 @@
     };
 };
 // Carousel END
+
+.dark-theme {
+    .cta {
+        background-color: variable.$bg-primary-light;
+        border: 3px solid variable.$bg-primary-light;
+        span {
+            color: variable.$secondary-light;
+        };
+    };
+    .cta:hover {
+        background-color: variable.$bg-secondary-dark;
+        border: 3px solid variable.$color-accent;
+    };
+
+    .close-modal:hover {
+        text-shadow: 0 0 5px variable.$secondary-light, 0 0 10px variable.$secondary-light, 0 0 15px variable.$secondary-light, 0 0 20px variable.$color-accent, 0 0 30px variable.$color-accent, 0 0 40px variable.$color-accent, 0 0 55px variable.$color-accent, 0 0 75px variable.$color-accent;
+    };
+
+    .submit-btn {
+        box-shadow: 
+            0px -4px 4px 2px variable.$primary-dark,
+            0px 4px 4px 2px variable.$primary-dark;
+        background-color: variable.$bg-primary-dark;
+        border: 1px solid variable.$secondary-dark;
+        color: variable.$secondary-dark;
+    };
+    // Carousel
+    #div-previous {
+        #previous {
+            i {
+                color: variable.$secondary-dark;
+            };
+        };
+    };
+    #div-previous:hover {
+        #previous-inside {
+            text-shadow: 0 0 5px variable.$primary-dark, 0 0 10px variable.$primary-dark, 0 0 15px variable.$primary-dark, 0 0 20px variable.$color-accent, 0 0 30px variable.$color-accent, 0 0 40px variable.$color-accent, 0 0 55px variable.$color-accent, 0 0 75px variable.$color-accent;
+        };
+    };
+
+    #div-next {
+        #next {
+            i {
+                font-size: 3rem;
+                color: variable.$secondary-dark;
+            };
+        };
+    };
+    #div-next:hover {
+        #next-inside {
+            text-shadow: 0 0 5px variable.$primary-dark, 0 0 10px variable.$primary-dark, 0 0 15px variable.$primary-dark, 0 0 20px variable.$color-accent, 0 0 30px variable.$color-accent, 0 0 40px variable.$color-accent, 0 0 55px variable.$color-accent, 0 0 75px variable.$color-accent;
+        };
+    };
+    // Carousel END
+};
 
 // Responsive:
 @media screen and (min-width:1921px) {  
@@ -190,9 +223,6 @@
             right: 0;
             bottom: 0;
         };
-    };
-    .submit-btn {
-        width: 20vw;
     };
 };
 
@@ -224,14 +254,5 @@
             right: 0;
             bottom: 0;
         };
-    };
-    .submit-btn {
-        width: 35vw;
-    };
-};
-
-@media screen and (max-width:520px) {
-    .submit-btn {
-        width: 50vw;
     };
 };

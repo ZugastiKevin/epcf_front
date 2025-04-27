@@ -11,14 +11,26 @@
 <body>
     <header>
         <nav class="container nav">
-            <h2>Kevin Zugasti</h2>
+            <a href="index.html"><h2>Kevin Zugasti</h2></a>
             <ul class="list-navigation">
-                <li><a href="#" class="link">Portfolio</a></li>
-                <li class="icon-nav-theme-mobile"><i class="fa-regular fa-moon"></i></li>
-                <li><a href="#" class="link">Contact</a></li>
-                <li class="icon-nav-theme-desktop"><i class="fa-regular fa-moon"></i></li>
+                <li><a href="#me" class="link">A Propos</a></li>
+                <li><a href="#works" class="link">Mon Parcours</a></li>
+                <li><a href="#portfolio" class="link">Portfolio</a></li>
+                <li><a href="#contact" class="link">Contact</a></li>
             </ul>
+            <div class="dropdown">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="dropdown-content">
+                    <li><a href="#me" class="link">A Propos</a></li>
+                    <li><a href="#works" class="link">Mon Parcours</a></li>
+                    <li><a href="#portfolio" class="link">Portfolio</a></li>
+                    <li><a href="#contact" class="link">Contact</a></li>
+                </ul>
+            </div>
         </nav>
+        <div id="theme-toggle">
+            <img src="assets/img/theme/sunmoon.svg" alt="">
+        </div>
     </header>
     <main>
         <div class="disguise"></div>
@@ -29,7 +41,7 @@
             <p id="content"></p>
         </div>
         <section id="banner">
-            <div class="container">
+            <div class="container banner">
                 <div class="title">
                     <h3>hello, je suis</h3>
                     <h1>kevin zugasti</h1>
@@ -37,7 +49,9 @@
                 </div>
                 <div class="container-elements-banner">
                     <a href="https://www.linkedin.com/in/kevin-zugasti-760a9b203/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
-                    <img src="assets/img/conference.png" alt="un homme qui donne une conference">
+                    <div>
+                        <img src="assets/img/conference.png" alt="un homme qui donne une conference">
+                    </div>
                     <a href="https://github.com/ZugastiKevin" target="_blank" class="github"><i class="fa-brands fa-square-github"></i></a>
                 </div>
             </div>
@@ -74,7 +88,7 @@
                         <p>Après avoir pris un virage à 90° dans ma vie professionnelle, j’ai décidé de me reconvertir dans un domaine qui me passionne depuis longtemps : les nouvelles technologies.</p>
                         <p>Cette passion m’a conduit à rejoindre The Hacking Project, un bootcamp intensif axé sur le développement web, où j’ai posé les bases de mon parcours de développeur full-stack. Dans la continuité de cette première expérience, j’ai intégré la formation Développeur web et web mobile à Talis Business School Périgueux, afin de renforcer mes compétences et approfondir mes connaissances, notamment en frameworks.</p>
                         <p>Aujourd’hui, je suis à la recherche d’un stage de 10 semaines pour mettre en pratique ce que j’ai appris, continuer à progresser et devenir un développeur performant, curieux et pleinement opérationnel.</p>
-                        <a href="" class="cta-light"><span>Contactez moi</span></a>
+                        <a href="" class="cta"><span>Contactez moi</span></a>
                     </div>
                 </div>
             </div>
@@ -177,17 +191,17 @@
                 </div>
                 <form id="contact-form">
                     <div class="form group-f-l">
-                        <input class="contact-input firstname" type="text" name="firstname" placeholder="Prenom *" required>
-                        <input class="contact-input lastname" type="text" name="lastname" placeholder="Nom *" required>
+                        <input class="firstname" type="text" name="firstname" placeholder="Prenom *" required>
+                        <input class="lastname" type="text" name="lastname" placeholder="Nom *" required>
                     </div>
                     <div class="form">
-                        <input class="contact-input email" type="email" name="email" placeholder="Email *" required>
+                        <input class="email" type="email" name="email" placeholder="Email *" required>
                     </div>
                     <div class="form">
-                        <input class="contact-input object-form" type="text" name="object" placeholder="Sujet *" required>
+                        <input class="object-form" type="text" name="object" placeholder="Sujet *" required>
                     </div>
                     <div class="form">
-                        <textarea class="contact-input content-form" name="content" placeholder="Message *" required></textarea>
+                        <textarea class="content-form" name="content" placeholder="Message *" required></textarea>
                     </div>
                     <div class="form-submit">
                         <button class="submit-btn" type="submit">Envoyer</button>
@@ -204,6 +218,7 @@
             </div>
         </section>
     </footer>
+    <script src="assets/scripts/theme.js"></script>
     <script src="assets/scripts/header.js"></script>
     <script src="assets/scripts/works.js"></script>
     <script src="assets/scripts/carousel.js"></script>

@@ -430,6 +430,12 @@ main #contact .contact #contact-form #answer {
 .dark-theme main #contact .contact #contact-form #answer {
   color: #003B36;
 }
+.dark-theme main #contact:target::before {
+  content: "";
+  display: block;
+  height: 6.25rem;
+  margin-top: -6.25rem;
+}
 
 @media screen and (min-width: 1921px) {
   main #portfolio .portfolio .carousel .gallery {
@@ -882,6 +888,9 @@ header #theme-toggle img {
 .dark-theme .cta:hover {
   background-color: #ECE5F0;
   border: 3px solid #E98A15;
+}
+.dark-theme .close-modal i {
+  color: #E98A15;
 }
 .dark-theme .close-modal:hover {
   text-shadow: 0 0 5px #003B36, 0 0 10px #003B36, 0 0 15px #003B36, 0 0 20px #E98A15, 0 0 30px #E98A15, 0 0 40px #E98A15, 0 0 55px #E98A15, 0 0 75px #E98A15;

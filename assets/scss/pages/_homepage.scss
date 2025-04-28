@@ -516,6 +516,12 @@ main {
                 };
             };
         };
+        #contact:target::before {
+            content:"";
+            display:block;
+            height: 6.25rem;
+            margin-top: -6.25rem;
+        };
     };
 };
 

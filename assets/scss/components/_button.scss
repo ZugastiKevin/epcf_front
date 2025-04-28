@@ -164,6 +164,11 @@
         border: 3px solid variable.$color-accent;
     };
 
+    .close-modal {
+        i {
+            color: variable.$color-accent;
+        };
+    };
     .close-modal:hover {
         text-shadow: 0 0 5px variable.$secondary-light, 0 0 10px variable.$secondary-light, 0 0 15px variable.$secondary-light, 0 0 20px variable.$color-accent, 0 0 30px variable.$color-accent, 0 0 40px variable.$color-accent, 0 0 55px variable.$color-accent, 0 0 75px variable.$color-accent;
     };
